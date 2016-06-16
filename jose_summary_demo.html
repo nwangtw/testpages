@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8">
-    <!-- Card specification -->
+    <meta charset="utf-8">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://www.twitter.com/">
     <meta name="twitter:title" content="Bacon ipsum dolor amet alcatra tenderloin pork loin filet mignon ball tip ribeye">
     <meta name="twitter:description" content="Chuck andouille short loin, leberkas cow porchetta sausage pork chop frankfurter hamburger tri-tip rump. Ham hock cupim shoulder sirloin salami tenderloin.">
-    <meta name="twitter:image:src" content="">
+    <meta name="twitter:image:src" content="https://cdn.rawgit.com/nwangtw/testpages/cf37f85f0d5b0b76b5240bea22562c7404294612/images/background.jpg">
     <meta name="twitter:image:alt" content="Leberkas cow porchetta.">
+    <script type="text/javascript">
+      var urlParams = {};
+      var match,
+          pl     = /\+/g,
+          search = /([^&=]+)=?([^&]*)/g,
+          decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+          query  = window.location.search.substring(1);
+
+      while (match = search.exec(query)) {
+        urlParams[decode(match[1])] = decode(match[2]);
+      }
+
+      if (urlParams.redirect) {
+        window.location = urlParams.redirect;
+      }
+    </script>
   </head>
   <body>
   </body>
